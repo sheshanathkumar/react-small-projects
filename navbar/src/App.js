@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { FaBars } from "react-icons/fa";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <nav>
+      <div className="nav-center">
+        <div className="nav-header">
+          <img src={logo} alt="logo" />
+          <button className="nav-toggle">
+            <FaBars />
+          </button>
+        </div>
+        <div className="links-container show-container">
+          <ul className="links">
+            <li>
+              <a href="#">HOME</a>
+              <a href="#">PROFILE</a>
+              <a href="#">SOCIAL</a>
+              <a href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+        <ul className="social-icons"></ul>
+      </div>
+    </nav>
   );
 }
 
