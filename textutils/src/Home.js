@@ -132,7 +132,7 @@ export default function Home(props) {
             <p>word count = {wordCount}</p>
             <p>letter count = {letterCount} </p>
 
-            <h3>Whole Text</h3>
+            <h3>Preview</h3>
             <p>{text}</p>
           </div>
         </div>
